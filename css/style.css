@@ -1,0 +1,343 @@
+body{
+    background-color: #f5f5f5;
+}
+:root{
+    --letters:8;
+}
+nav{
+    opacity: 0.95;
+}
+.home {
+    background-image: url(../DevFolioImages/hero-bg.jpg );
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center  center;
+    background-attachment: fixed;
+ 
+}
+.home .overley{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.home .container h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.home .container p{
+    font-family: "Reddit Mono", monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    position: relative;
+width: 0;
+    overflow: hidden;
+    animation: typing 3s  infinite steps(var(--letters));
+
+}
+.home .container p::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height:90% ;
+    background-color: white;
+
+   
+}
+@keyframes typing {
+    0% , 100%{
+        width: 0;
+        
+    }
+    50% ,70%{
+        width: calc(var(--letters)*24px)
+        
+    }
+
+
+    
+}
+
+.margin-botton{
+    --bs-card-group-margin: 0;
+}
+.title-span{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1e1e1e;
+}
+.about{
+padding-top: 64px;
+padding-right: 12px;
+padding-left: 12px;
+
+}
+.about .container{
+    padding: 64px 20px;
+    margin-bottom: 48px;
+
+}
+
+
+.bs-border-raduis{
+    --bs-border-radius: 0;
+}
+
+.bs-progress-height{
+    --bs-progress-height: 0.7rem;
+}
+
+.about-description{
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.about h5{
+    font-size: 2rem;
+    position: relative;
+}
+.about h5::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color:#0078ff;
+    bottom:-13px;
+    left: 0;
+    position: absolute;
+}
+
+.line{
+
+    width: 40px;
+    height: 5px;
+    background-color:#0078ff;
+    
+}
+
+.services .card{
+    padding: 2.5rem 1.3rem;
+}
+.services .card i {
+    font-size: 40px; 
+}
+.services .card span{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+box-shadow: 0 0 0 10px #0078ff;
+margin-bottom: 16px;
+}
+.services-title{
+    margin-bottom: 64px;
+}
+.services-title h3{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.services .card .card-title{
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+}
+.services .card:hover span{
+    box-shadow: 0 0 0 10px #cee0f6;
+    background-color: #0078ff;
+}
+.services .card:hover i{
+    color: white;
+}
+.counter{
+    background-image: url(../DevFolioImages/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    padding: 128px 0;
+}
+.counter .card span{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    box-shadow: 0 0 0 10px #cde1f8;
+    margin-bottom: 16px;
+    }
+    .counter .card i{
+        font-size: 25px;
+        color: white;
+    }
+.bs-card-border-width{
+        --bs-border-width:0;
+    } 
+
+.bs-body-bg{
+    --bs-body-bg:none;
+}
+.portfolio{
+    padding-top: 64px;
+   
+}
+.container .protfolio-title{
+    margin-bottom: 4rem;
+}
+.portfolio i{
+   color: #0078ff; 
+}
+.portfolio .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #0078ff;
+}
+.portfolio .card-body{
+    padding: 2rem 3% 1rem 4%;
+}
+.portfolio .scale-img img{
+transition: all 1s ;
+}
+.portfolio .card:hover img{
+    
+    transform:scale(1.2)
+}
+
+.testimionial{
+background-image: url(../DevFolioImages/overlay-bg.jpg);
+background-position: center center;
+background-size: cover;
+    background-attachment: fixed;
+    padding: 128px 0;
+    text-align: center;
+}
+.carousel-inner img{
+    width: 40%;
+    height: 40%;
+
+}
+.carousel-inner span{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.carousel-inner p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.blog .card-body a{
+   font-size: 1.3rem;
+   font-weight: 500;
+   margin-top: 0.6rem;
+   margin-bottom: 8px;
+   color: #1e1e1e;
+   
+}
+.blog .card-body a:hover {
+color: #0078ff;
+}
+.blog .card .card-footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.blog .card .card-footer a{
+color: #1e1e1e;
+}
+.blog .card .card-footer a:hover{
+    color: #0078ff;
+}
+.clock{
+    color: #4e4e4e;
+}
+.blog .blog-title{
+margin-bottom: 64px;
+}
+.blog .blog-title h3{
+    font-size: 3rem;
+    color: #1e1e1e; 
+}
+.blog .blog-title span{
+    color: #4e4e4e;
+}
+
+
+.contact{
+    background-image: url(../DevFolioImages/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+        background-attachment: fixed;
+        padding-top: 64px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 48px;
+    }
+.bs-border-radius-lg{
+    --bs-border-radius-lg: 2rem;
+    }
+
+.contact-social span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #0078ff;
+}
+.contact-social span:hover{
+    background-color: #0078ff;
+    border: 4px solid #cde1f8;
+}
+.contact-social span:hover i{
+    color: white;
+}
+.button-send button:hover{
+    border: 5px solid #cde1f8;
+    background-color:#3393FF
+}
+.info label{
+    font-size: 14px;
+}
+.contact .line{
+    width: 90px;
+    height: 3px;
+    color: #0078ff;
+}
+.contact .text h3{
+    font-size: 32px;
+}
+.footer{
+    padding: 25px 0;
+    background-color: #0062d3;
+}
+
+
+.carousel-indicators {
+    bottom: -100px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+
+@media (min-width:640px) {
+    .carousel-inner img{
+        width: 15%;
+        height: 15%;
+    
+    }
+    .home .container h1{
+        font-size: 4.5rem;
+
+
+    }
+    .home .container p{
+        font-size: 2.5rem;
+
+       
+    }
+    .about .container{
+        padding: 64px 48px;
+       
+    }
+    .contact{
+        padding: 64px;
+    }
+
+}
